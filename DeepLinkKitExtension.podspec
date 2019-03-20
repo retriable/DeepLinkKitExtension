@@ -1,16 +1,16 @@
-Pod::Spec.new do |s|
-s.name     = 'DeepLinkKitExtension'
-s.version  = '1.0.0'
-s.license  = 'MIT'
-s.summary  = 'DeepLinkKit Extension'
-s.homepage = 'https://github.com/retriable/DeepLinkKitExtension'
-s.author   = { 'retriable' => 'retriable@retriable.com' }
-s.source   = { :git => 'https://github.com/retriable/DeepLinkKitExtension.git',:tag => "#{s.version}" }
-s.description = 'DeepLinkKit Extension.'
-s.requires_arc   = true
-s.ios.deployment_target = '8.0'
-s.tvos.deployment_target = '9.0'
-s.source_files = 'DeepLinkKitExtension/*.{h,m}'
+Pod::Spec.new do |spec|
+spec.name     = 'DeepLinkKitExtension'
+spec.version  = '1.0.0'
+spec.license  = 'MIT'
+spec.summary  = 'DeepLinkKit Extension'
+spec.homepage = 'https://github.com/emsihyo/DeepLinkKitExtension'
+spec.author   = { 'emsihyo' => 'emsihyo@gmail.com' }
+spec.source   = { :git => 'https://github.com/retriable/DeepLinkKitExtension.git',:tag => "#{spec.version}" }
+spec.description = 'DeepLinkKit Extension.'
+spec.requires_arc = true
+spec.source_files = 'DeepLinkKitExtension/*.{h,m}'
+spec.ios.deployment_target = '8.0'
+spec.tvos.deployment_target = '9.0'
 spec.dependency 'DeepLinkKit'
 spec.dependency 'JRSwizzle'
 end
