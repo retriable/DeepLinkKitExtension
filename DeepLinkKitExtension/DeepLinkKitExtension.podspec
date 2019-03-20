@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-s.name     = 'Dram'
-s.version  = '1.0.3'
+s.name     = 'DeepLinkKitExtension'
+s.version  = '1.0.0'
 s.license  = 'MIT'
 s.summary  = 'DeepLinkKit Extension'
 s.homepage = 'https://github.com/retriable/DeepLinkKitExtension'
