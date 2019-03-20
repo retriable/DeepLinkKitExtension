@@ -118,7 +118,7 @@
 		C9188E362242AB53004D5D41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9188E372242AB53004D5D41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9188E412242AC60004D5D41 /* DeepLinkKitExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeepLinkKitExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9188E5B2242B139004D5D41 /* DeepLinkKitExtension.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DeepLinkKitExtension.podspec; sourceTree = "<group>"; };
+		C9188E5C2242B220004D5D41 /* DeepLinkKitExtension.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DeepLinkKitExtension.podspec; sourceTree = SOURCE_ROOT; };
 		D98DA4C892492E033AB37238 /* Pods-DeepLinkKitExtension tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepLinkKitExtension tvOS.debug.xcconfig"; path = "Target Support Files/Pods-DeepLinkKitExtension tvOS/Pods-DeepLinkKitExtension tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E1669870AD8F3D8C3BB5E1B1 /* Pods-DeepLinkKitExtension tvOS Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepLinkKitExtension tvOS Example.release.xcconfig"; path = "Target Support Files/Pods-DeepLinkKitExtension tvOS Example/Pods-DeepLinkKitExtension tvOS Example.release.xcconfig"; sourceTree = "<group>"; };
 		F6BC2072A775857072E9F48A /* Pods-DeepLinkKitExtension iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepLinkKitExtension iOS.debug.xcconfig"; path = "Target Support Files/Pods-DeepLinkKitExtension iOS/Pods-DeepLinkKitExtension iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,7 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				C9188E0A2242AB09004D5D41 /* .travis.yml */,
-				C9188E5B2242B139004D5D41 /* DeepLinkKitExtension.podspec */,
+				C9188E5C2242B220004D5D41 /* DeepLinkKitExtension.podspec */,
 				C9188E092242AB01004D5D41 /* LICENSE */,
 				C9188E082242AB01004D5D41 /* Podfile */,
 				C9188E072242AB01004D5D41 /* README.md */,
