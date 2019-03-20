@@ -1,0 +1,6 @@
+framework module Pods_DeepLinkKitExtension_iOS_Example {
+  umbrella header "Pods-DeepLinkKitExtension iOS Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
