@@ -8,12 +8,16 @@
 
 #import <DeepLinkKit/DeepLinkKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface DPLDeepLinkRouter (Extension)
 
-- (BOOL)canHandleURL:(NSURL*)url;
+- (BOOL)canHandleURL:(NSURL * _Nullable)url NS_SWIFT_NAME(canHandle(url:));
 
-- (BOOL)handleURL:(NSURL *)url parameters:(NSDictionary*)parameters;
+- (BOOL)handleURL:(NSURL * _Nullable)url parameters:(NSDictionary* _Nullable)parameters NS_SWIFT_NAME(handle(url:parameters:));
 
-- (BOOL)handleURL:(NSURL *)url parameters:(NSDictionary*)parameters withCompletion:(DPLRouteCompletionBlock)completionHandler;
+- (BOOL)handleURL:(NSURL * _Nullable)url parameters:(NSDictionary* _Nullable)parameters withCompletion:(DPLRouteCompletionBlock _Nullable)completionHandler NS_SWIFT_NAME(handle(url:parameters:completionHandler:));
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -35,8 +35,8 @@ NSString * DeepLinkRouterAdditionalParametersKey=@"__addition_parameters_key";
 
 @implementation DPLDeepLinkRouter (Extension)
 
-- (BOOL)canHandleURL:(id)u{
-    NSURL *url=[u isKindOfClass:NSURL.class]?u:[NSURL URLWithString:u];
+- (BOOL)canHandleURL:(NSURL *)url{
+    if (!url) return NO;
     id  deepLink;
     for (NSString *route in [self valueForKey:@"routes"]) {
         id matcher = ((id (*)(Class, SEL,id))(void *) objc_msgSend)(NSClassFromString(@"DPLRouteMatcher"), NSSelectorFromString(@"matcherWithRoute:"),route);
@@ -56,6 +56,7 @@ NSString * DeepLinkRouterAdditionalParametersKey=@"__addition_parameters_key";
 }
 
 - (BOOL)handleURL:(NSURL *)url parameters:(NSDictionary*)parameters withCompletion:(DPLRouteCompletionBlock)completionHandler{
+    if (!url) return NO;
     if (!parameters) return [self handleURL:url withCompletion:completionHandler];
     NSString *key=[[NSUUID UUID] UUIDString];
     self.oo_parametersRoot[key]=parameters;
